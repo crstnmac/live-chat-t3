@@ -78,7 +78,7 @@ function RoomPage() {
         <link href="https://api.fontshare.com/v2/css?f[]=space-grotesk@1,300,700,500,400,600&display=swap" rel="stylesheet" />
 
       </Head>
-      <div className="flex flex-col h-max bg-gray-200 pb-20">
+      <div className="flex flex-col h-full pb-20">
         <div className="flex-1">
           <ul className="flex flex-col p-4">
             {messages.map((m) => {

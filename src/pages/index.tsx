@@ -24,8 +24,8 @@ const Home: NextPage = () => {
         <link href="https://api.fontshare.com/v2/css?f[]=space-grotesk@1,300,700,500,400,600&display=swap" rel="stylesheet" />
       </Head>
 
-      <main className="container mx-auto flex flex-col items-center justify-center h-screen p-4 bg-gray-200">
-        <button className="text-bold" onClick={createRoom}>create chat room</button>
+      <main className="container mx-auto flex flex-col items-center justify-center h-screen p-4 ">
+        <button className="font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-lg p-2" onClick={createRoom}>create chat room</button>
       </main>
     </>
   )
