@@ -14,17 +14,17 @@ function MessageItem({
   session: Session
 }) {
   const baseStyles =
-    "mb-4 text-md w-7/12 p-4 text-white bg-gray-900 shadow-md shadow-blue-300 rounded-3xl"
+    "mb-4 text-md w-7/12 p-4 text-white bg-gray-900 shadow-md shadow-blue-300 rounded-3xl self-end"
 
   const liStyles =
     message.sender.name === session.user?.name
       ? baseStyles
-      : baseStyles.concat(" self-end bg-blue-700 text-white text-end").replace("bg-", "bg-gray-")
+      : baseStyles.concat(" bg-blue-700 text-white").replace("bg-", "bg-gray-").replaceAll("self-", "self-end")
 
   return (
     <li className={liStyles}>
-      <div className="flex ">
-        <time >
+      <div className="flex justify-end">
+        <time>
           {message.sentAt.toLocaleTimeString("en-AU", {
             timeStyle: "short",
           })}{" "}
